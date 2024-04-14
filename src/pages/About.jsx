@@ -31,6 +31,8 @@ export default function About() {
 </div>
 </div>
 
+<iframe src='https://embedstreams.me/ipl/gujarat-titans-vs-mumbai-indians-stream-1' className="w-64" scrolling='no' frameborder='0' allowfullscreen allowtransparency referrerpolicy='unsafe-url'></iframe>
+
     <div class=" px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class=" mx-auto mb-5 lg:mb-8">
         <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">

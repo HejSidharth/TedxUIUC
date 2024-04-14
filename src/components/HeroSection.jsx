@@ -1,8 +1,16 @@
 import React from "react";
 import logo from "../assets/ted.png";
 import Videos from "./Videos";
+import { useEffect } from "react";
+import Events from "./Events";
 
 export default function HeroSection() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "//embed.typeform.com/next/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
   return (
     <>
       <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 sm:mt-24 mt-24">
@@ -17,15 +25,12 @@ export default function HeroSection() {
               Power of Ideas at TEDxUIUC.
             </p>
             <div class="mt-7 flex  gap-3 w-full sm:inline-flex text-white">
+              
+              <div data-tf-live="01HTK26X8BNDAZB8MZBG703KS2"></div>
+
               <a
-                class="mx-auto sm:mx-0 w-48 sm:w-24 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                href="#"
-              >
-                Register
-              </a>
-              <a
-                class="mx-auto sm:mx-0 w-48 sm:w-max py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border text-black bg-white hover:bg-gray-300"
-                href="/about"
+                class="mx-auto sm:mx-0 w-48 sm:w-max py-3 px-4 inline-flex justify-center items-center gap-x-2 text-xl font-medium  border text-black bg-white hover:bg-gray-300"
+                href="https://www.ted.com/about/programs-initiatives/tedx-program"
               >
                 Learn More
                 <svg
@@ -135,6 +140,8 @@ export default function HeroSection() {
           </svg>
         </div>
       </div>
+
+      <Events/>
 
       <Videos />
 

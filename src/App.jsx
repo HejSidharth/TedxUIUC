@@ -6,11 +6,13 @@ import { RouterProvider } from 'react-router-dom'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './pages/About'
 import Footer from './components/Footer'
+import Banner from './components/Banner'
 
 function App() {
   return (
     <BrowserRouter>
     <div className='hero-pattern min-h-screen'>
+    <Banner/>
     <Header/>
     <Routes>
         <Route path="/" element={<HeroSection />} />
